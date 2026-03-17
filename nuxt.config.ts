@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: false }, // ❌ Matikan devtools untuk hemat RAM
 
   modules: [
-    '@nuxthub/core',
     'shadcn-nuxt',
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
@@ -24,15 +23,6 @@ export default defineNuxtConfig({
     '/dashboard': {
       redirect: '/dashboard/links',
     },
-  },
-
-  hub: {
-    ai: true,
-    analytics: true,
-    blob: false,
-    cache: false,
-    database: false,
-    kv: true,
   },
 
   eslint: {
