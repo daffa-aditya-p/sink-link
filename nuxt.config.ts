@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    '@nuxthub/core',
+    // '@nuxthub/core',
     'shadcn-nuxt',
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
