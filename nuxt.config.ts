@@ -28,15 +28,6 @@ export default defineNuxtConfig({
     },
   },
 
-  hub: {
-    ai: true,
-    analytics: true,
-    blob: false,
-    cache: false,
-    database: false,
-    kv: true,
-  },
-
   eslint: {
     config: {
       stylistic: true,
@@ -45,7 +36,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'cloudflare', // ✅ TAMBAHAN (fix berat build)
+    preset: 'cloudflare-pages',
     experimental: {
       openAPI: true,
     },
