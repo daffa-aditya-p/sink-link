@@ -1,11 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false, // ✅ TAMBAHAN (fix OOM)
-
-  devtools: { enabled: true },
+  devtools: { enabled: false }, // ❌ Matikan devtools untuk hemat RAM
 
   modules: [
-    // '@nuxthub/core',
+    '@nuxthub/core',
     'shadcn-nuxt',
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
@@ -26,6 +24,15 @@ export default defineNuxtConfig({
     '/dashboard': {
       redirect: '/dashboard/links',
     },
+  },
+
+  hub: {
+    ai: true,
+    analytics: true,
+    blob: false,
+    cache: false,
+    database: false,
+    kv: true,
   },
 
   eslint: {
