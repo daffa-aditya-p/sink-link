@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false, // ✅ TAMBAHAN (fix OOM)
+
   devtools: { enabled: true },
 
   modules: [
@@ -43,8 +45,8 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: 'cloudflare', // ✅ TAMBAHAN (fix berat build)
     experimental: {
-      // Enable Server API documentation within NuxtHub
       openAPI: true,
     },
   },
